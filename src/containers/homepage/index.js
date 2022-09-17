@@ -21,7 +21,7 @@ const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    document.title = "Homepage";
+    document.title = "Fast8 Frontend Test";
 
     for (let i = 0; i < 25; i++) {
       setData((prevState) => [
