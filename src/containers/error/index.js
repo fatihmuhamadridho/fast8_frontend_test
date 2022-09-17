@@ -1,9 +1,14 @@
 import { Button, Result } from "antd";
 import React from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const ErrorPage = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+
+    useEffect(() => {
+      document.title = "404 Not Found"
+    }, [])
 
   return (
     <main
